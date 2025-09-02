@@ -10,22 +10,12 @@ export const corsAllowAllOptions = {
 // 특정 도메인만 허용하는 CORS 설정
 const allowedOrigins = [
   'http://localhost:8080',
-      'http://vrware.us',
-      'https://vrware.us',
-      'https://stbuilder.vrware.us',
-      'https://api-storage.cloud.toast.com',
-      'https://kr1-api-object-storage.nhncloudservice.com',
-      'https://vrware-test.s3.ap-northeast-2.amazonaws.com',
-      'https://oaidalleapiprodscus.blob.core.windows.net',
-      'https://master.vrware.team',
-      'https://directsend.co.kr',
+  'http://도메인'
 ];
 
 // 정규식 리스트 수정
 const regexList = [
-  new RegExp('\\.metaclassroom\\.world$'),
-  new RegExp('\\.metatree\\.world$'),
-  new RegExp('\\.vrware\\.us$'),
+  new RegExp('\\.도메인\\.특정url$'),
 ];
 
 const isAllowedOrigin = (origin) => {
